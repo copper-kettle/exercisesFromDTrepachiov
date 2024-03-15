@@ -1,0 +1,254 @@
+$color_border: #9C9C9C;
+$color_background: #bdb8b257;
+$color_fontTitle: #474A51;
+$color_fontText: #4E5754;
+
+
+@font-face {
+	font-family: "light";
+	src: url(/sourses/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: "regular";
+	src: url(/sourses/Roboto-Regular.ttf);
+}
+
+@mixin fontLight($f_size, $f_weight) {
+	font-family: "light";
+	font-size: $f_size + vw;
+	font-weight: $f_weight;
+}
+
+@mixin fontReg($f_size, $f_weight) {
+	font-family: "regular";
+	font-size: $f_size + vw;
+	font-weight: $f_weight;
+}
+
+@mixin flexRow($justCont, $alignItem) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: $justCont;
+	-ms-flex-pack: $justCont;
+	justify-content: $justCont;
+	-webkit-box-align: $alignItem;
+	-ms-flex-align: $alignItem;
+	align-items: $alignItem;
+}
+
+@mixin flexCol($justCont, $alignItem) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: $justCont;
+	-ms-flex-pack: $justCont;
+	justify-content: $justCont;
+	-webkit-box-align: $alignItem;
+	-ms-flex-align: $alignItem;
+	align-items: $alignItem;
+}
+
+
+
+@media (width: 1200px) {
+	.header {
+		.title {
+			h1 {
+				a {
+					span {
+						@include fontLight(2.5, 500);
+					}
+				}
+			}
+		}
+
+		.main_menu {
+			top: 200px;
+			.menu_level {
+				@include fontLight(2, 700);
+				.menu_level_items {
+					.menu_stage {
+						a {
+							@include fontLight(2, 600);
+							line-height: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main {
+		.level {
+			.stage {
+				.articles {
+					.task {
+						h4 {
+							@include fontLight(2, 700);
+						}
+						p {
+							font-size: 1.5vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	.wrapper {
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		.header {
+			.title {
+				h1 {
+					a {
+						line-height: normal;
+						span {
+							@include fontReg(2, 500);
+							line-height: 0;
+						}
+					}
+				}
+			}
+			.main_menu {
+				top: 210px;
+			}
+		}
+		.main {
+			.level {
+				.stage {
+					.articles {
+						.task {
+							width: 30%;
+							height: 220px;
+							h4 {
+								height: auto;
+								@include fontLight(2.5, 500);
+							}
+							p {
+								height: auto;
+								@include fontLight(1.5, 500);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.up_arrow {
+		a {
+			width: 70px;
+			height: 70px;
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.wrapper {
+		.header {
+			height: 150px;
+			.title {
+				h1 {
+					a {
+						@include fontReg(5, 400);
+						line-height: 90%;
+					}
+				}
+			}
+			.main_menu {
+				top: 150px;
+				.menu_level {
+						@include fontLight(2.5, 600);
+				}
+			}
+		}
+		.main {
+			.level {
+				.stage {
+					.articles {
+						.task {
+							h4 {
+								@include fontLight(3, 600);
+							}
+							p {
+								@include fontLight(1.8, 600);
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (width: 450px) {
+	.wrapper {
+		width: 100%;
+		.up_arrow {
+			bottom: 10px;
+			right: 44%;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+		}
+
+		.header {
+			.title {
+				h1 {
+					a {
+						@include fontReg(10, 700);
+						span {
+							@include fontLight(5, 400);
+						}
+					}
+				}
+			}
+		}
+
+		.main {
+			.level {
+				.stage {
+					width: 100%;
+					.articles {
+						width: 100%;
+						.task {
+							width: 45%;
+							height: 200px;
+							h4 {
+								@include fontLight(3, 500);
+								margin-bottom: 10px;
+							}
+							p {
+								@include fontLight(3, 300);
+								height: 40%;
+							}
+							.task_btn {
+								margin: 5px ;
+								padding: 5px;
+								@include fontLight(4, 300);
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
