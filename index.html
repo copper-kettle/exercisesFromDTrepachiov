@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="sourses/img/icons8-чайник-для-кемпинга-16.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -21,8 +22,8 @@
 
 
 		<div class="burger__menu">
-				<span></span>
-			</div>
+			<span></span>
+		</div>
 
 		<header class="header" id="header">
 			<div class="title">
@@ -35,7 +36,7 @@
 			</div>
 
 			<nav class="main_menu menu_mobile">
-				
+
 				<div class="menu_level">
 					<a href=#>Level 1</a>
 					<div class="menu_level_items hide">
@@ -739,7 +740,7 @@
 						</section>
 					</section>
 					<!-- stage 10========================================= -->
-					<!-- <section class="stage" id="stage10">
+					<section class="stage" id="stage10">
 						<div class="title">
 							<h3>
 								<a href="https://code.mu/ru/javascript/tasker/stager/1/10/" target="_blank" rel="noopener noreferrer">
@@ -752,40 +753,59 @@
 							<article class="task">
 								<h4>Task 1 </h4>
 								<p>
-
+									Заполните массив
+									случайными числами из промежутка от 1 до 100
 								</p>
+								<form action="./js/level1/stage10/l1s10t1.js">
+									<input type="number" name="number" id="inp_l1s10t1" placeholder="Array lenght">
+								</form>
 								<button class="task_btn" id="l1s10t1">Выполнить</button>
-								<script type="module" src=""></script>
+								<script type="module" src="./js/level1/stage10/l1s10t1.js"></script>
+								
 							</article>
 
 							<article class="task">
 								<h4>Task 2</h4>
 								<p>
-
+									Дано некоторое число:
+									Выведите в консоль все его 
+									символы с конца. 
 								</p>
+								<form action="" method="">
+									<label for="number">Введите число (не менее 5 цифр)</label>
+									<input type="number" name="number" id="inp_l1s10t2" autocomplete="off">
+								</form>
 								<button class="task_btn" id="l1s10t2">Выполнить</button>
-								<script type="module" src=""></script>
+								<script type="module" src="js/level1/stage10/l1s10t2.js"></script>
 							</article>
 
 							<article class="task">
 								<h4>Task 3</h4>
 								<p>
-
+									Дан некоторый массив, <br>
+									<span id="spn_l1s10t3"></span> <br>
+									По очереди выведите в консоль 
+									подмассивы из двух элементов массива
 								</p>
 								<button class="task_btn" id="l1s10t3">Выполнить</button>
-								<script type="module" src=""></script>
+								<script type="module" src="js/level1/stage10/l1s10t3.js"></script>
 							</article>
 
 							<article class="task">
 								<h4>Task 4</h4>
 								<p>
-
+									Даны два массива:
+									Слейте эти массивы в новый массив
 								</p>
+								<form action="">
+									<input type="number" name="" id="inp_l1s10t4_1" placeholder="Длина первого массива" autocomplete="off">
+									<input type="number" name="" id="inp_l1s10t4_2" placeholder="Длина второго массива" autocomplete="off">
+								</form>
 								<button class="task_btn" id="l1s10t4">Выполнить</button>
-								<script type="module" src=""></script>
+								<script type="module" src="js/level1/stage10/l1s10t4.js"></script>
 							</article>
 						</section>
-					</section> -->
+					</section>
 			</section>
 
 		</main>
@@ -794,11 +814,11 @@
 			<h2>FOOTER</h2>
 		</footer>
 		<script src="js/menu.js"></script>
+		<script src="js/burger.js"></script>
 	</div>
 
-	
 
-	<script src="js/burger.js"></script>
+
 </body>
 
 </html>

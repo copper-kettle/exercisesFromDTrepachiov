@@ -13,6 +13,7 @@ if (screen_width <= 576) {
 	burger.addEventListener('click', () => {
 	burger.classList.toggle('cross');
 	menu_mobile.classList.toggle('hide');
+	menu_items.classList.add('hide');
 });
 
 for (const key in menu_items) {
