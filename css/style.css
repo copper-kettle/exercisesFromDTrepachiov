@@ -53,6 +53,11 @@ p {
   display: none;
 }
 
+.black {
+  color: #000000;
+  text-decoration: underline;
+}
+
 .menu_mobile {
   display: -webkit-box;
   display: -ms-flexbox;
