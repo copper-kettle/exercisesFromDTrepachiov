@@ -56,6 +56,9 @@ p {
 .black {
   color: #000000;
   text-decoration: underline;
+  font-family: "regular";
+  font-size: 15pt;
+  font-weight: 700;
 }
 
 .menu_mobile {

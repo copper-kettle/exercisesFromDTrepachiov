@@ -102,6 +102,7 @@ p {
 .black {
 	color: #000000;
 	text-decoration: underline;
+	@include fontReg(15, 700);
 }
 
 

@@ -4,7 +4,7 @@ for (let i = 0; i < item.length; i++) {
 	if (item[i].dataset.page == bod.dataset.page) {
 		item[i].classList.toggle("black");
 		console.log(item[i].childNodes[1]);
-		item[i]
+		item[i].childNodes[1].removeAttribute('href');
 	}
 	
 }
