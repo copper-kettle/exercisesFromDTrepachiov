@@ -8,6 +8,7 @@ function l1S1T6() {
 	}
 }
 
+
 function executeButton(some_id, some_func) {
 	some_id.addEventListener('click', some_func);
 	
