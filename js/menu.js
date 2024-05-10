@@ -13,7 +13,7 @@ let item = document.querySelectorAll(".menu_level");
 let bod = document.querySelector("body");
 for (let i = 0; i < item.length; i++) {
 	// let attr = item[i].childNodes[1].getAttribute('href');
-	console.log(item[i].childNodes[1].hasAttribute('href'));
+	// console.log(item[i].childNodes[1].hasAttribute('href'));
 	if (item[i].childNodes[1].hasAttribute('href')) {
 		menu_stage.classList.add('hide');
 	}
