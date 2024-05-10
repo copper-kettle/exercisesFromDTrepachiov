@@ -1,8 +1,8 @@
 function l1S2T2() {
 	let number = prompt("Enter number", "000");
-	let first_fig = Number(number.toString()[0]);
+	// let first_fig = Number(number.toString()[0]);
 	let last_fig = Number(number.toString()[number.length - 1]);
-	alert(first_fig + last_fig);
+	alert("Last number  " + last_fig);
 }
 
 function executeButton(some_id, some_func) {

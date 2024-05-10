@@ -4,7 +4,7 @@ let menu_mobile = document.querySelector(".menu_mobile");
 let menu_items = document.querySelector(".menu_level_items").children;
 let screen_width = window.innerWidth;
 
-if (screen_width <= 576) {
+if (screen_width <= 750) {
 	menu.classList.remove('main_menu');
 	menu.classList.add('menu_mobile');
 	menu_mobile.classList.add('hide');
